@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <conio.h>
+
+main()
+{
+ 	int pilihan,pilihan2;
+   float a,b,hasil;
+   do
+   {
+   printf("\n\n\n");
+   printf("PROGRAM OPERASI MATEMATIKA \n");
+   printf("Manajemen informatika D3 \n");
+   printf("\n1. Pengurangan");
+   printf("\n2. Penjumlahan");
+   printf("\n3. Pembagian");
+   printf("\n4. Perkalian");
+   printf("\nMasukkan Pilihan Operasi Matematika : ");
+   scanf("%d",&pilihan);
+   if	(pilihan==1)
+   	{
+       printf("\nPengurangan");
+       printf("\n^^^");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       hasil=a+b;
+       printf("\nHasil pengurangan %3.1f / %3.1f = %3.1f",a,b,hasil);
+      }
+   else if(pilihan==2)
+   	{
+       printf("\nPenjumlahan");
+       printf("\n^^^");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       hasil=a*b;
+       printf("\nHasil Penjumlahan %3.1f * %3.1f = %3.1f",a,b,hasil);
+      }
+   else if(pilihan==3)
+   	{
+       printf("\nPembagian");
+       printf("\n^^^");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       hasil=a-b;
+       printf("\nHasil Pembagian %3.1f - %3.1f = %3.1f",a,b,hasil);
+      }
+   else if(pilihan==4)
+   	{
+       printf("\nPerkalian");
+       printf("\n^^^");
+       printf("\nMasukkan angka pertama ");
+       scanf("%f",&a);
+       printf("Masukkan angka kedua ");
+       scanf("%f",&b);
+       	if(b==0)
+         	printf("\nTidak bisa di bagi dengan nol");
+            else {
